@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Google One Tap Logian</title>
+        <script
+            src="https://accounts.google.com/gsi/client"
+            async
+            defer
+        ></script>
+    </head>
+    <body>
+        <h1>Welcome to My Appa</h1>
+
+        <div
+            id="g_id_onload"
+            data-client_id="425934262472-8p27v9nskhjvte23l6p1138q2p6sbgcs.apps.googleusercontent.com"
+            data-context="signin"
+            data-login_uri="http://localhost:5004/v2/sso/onetaplogin"
+            data-itp_support="true"
+        ></div>
+
+        <script>
+            // window.onload = function () {
+            //     const auth2 = gapi.auth2.init({
+            //         client_id:
+            //             "425934262472-8p27v9nskhjvte23l6p1138q2p6sbgcs.apps.googleusercontent.com",
+            //     });
+
+            //     auth2.attachClickHandler(
+            //         document.getElementById("g_id_onload"),
+            //         {},
+            //         function (googleUser) {
+            //             console.log(
+            //                 "Logged in: " +
+            //                     googleUser.getBasicProfile().getName()
+            //             );
+            //             // You can perform additional actions after the user is successfully logged in.
+            //         },
+            //         function (error) {
+            //             console.error("Login failed: " + error.error);
+            //         }
+            //     );
+            // };
+        </script>
+    </body>
+</html>
